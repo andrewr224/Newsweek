@@ -1,0 +1,402 @@
+@import "variables";
+@import "typorgaphy";
+@import "icons";
+@import "mixins";
+
+*,
+*:before,
+*:after {
+          box-sizing: border-box;
+}
+
+.yellow{
+  color: $yellow;
+}
+
+// Navigation
+nav{
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 61px;
+  background-color: $black-main;
+  box-shadow: rgba(0,0,0,0.25) 0 0 6px;
+  border-bottom: 1px solid $white;
+  .logo{
+    float:left;
+  }
+  .a-menu{
+    float: right;
+    a{
+      border-left: 1px solid rgba(200, 200, 200, 0.1);
+      display: block;
+      height: 60px;
+      width: 80px;
+      padding-left: 30px;
+      padding-top: 20px;
+    }
+    a:hover span{
+      background-color: darken($white, 50%);
+    }
+    span{
+      display: block;
+      background-color: $white;
+      width: 20px;
+      height: 2px;
+      margin-top: 4px;
+    }
+  }
+}
+
+// Lead news section
+#lead-image{
+  margin-top: 36px;
+  border-bottom: $red-border;
+  width: 100%;
+}
+
+.lead-news,
+.main-news{
+  article{
+    border-bottom: $grey-border;
+    padding: 20px 0;
+  }
+  img{
+    width: 93%;
+    margin: 0 auto 0 auto;
+  }
+  .headlines{
+    border-bottom: $grey-border;
+    background-color: $grey;
+    padding-bottom: 5px;
+    ul{
+      overflow: hidden;
+    }
+  }
+}
+
+.text{
+  width: 90%;
+  margin: 15px auto 0 auto;
+  p{
+    margin-top: 10px;
+  }
+}
+
+// Main news section
+.main-news{
+
+}
+
+// Magazine section
+.magazine{
+  padding-top: 30px;
+  h4{
+    display: inline-block;
+    background: white;
+    padding: 0 20px;
+    margin-bottom: -10px;
+  }
+  .orbit{
+    width: 93%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .orbit-bullets{
+    z-index: 1;
+    background: none;
+    box-shadow: none;
+    margin-top: 20px;
+    button{
+      width: 12px;
+      height: 12px;
+      margin: 0 5px;
+    }
+  }
+}
+
+.heading{
+  border-bottom: 4px solid $red;
+  margin-bottom: 30px;
+}
+
+.nice-list{
+  li{
+    list-style-type: none;
+    font-family: $font-primary;
+    font-size: 1.8em;
+    font-weight: 600;
+    line-height: 3.5;
+    height: 70px;
+    border-bottom: $grey-border;
+    &:last-child{
+      border: none;
+    }
+    &::before{
+      content: "";
+      display: inline-block;
+      background: $red;
+      height: 7px;
+      width: 7px;
+      margin-right: 10px;
+    }
+  }
+}
+
+
+// Lastes Pictures
+.in-pics{
+  background-color: #222;
+  color: $white;
+  font-family: $font-primary;
+  padding-bottom: 40px;
+  position: relative;
+  overflow: hidden;
+  .change-view{
+    position: absolute;
+    width: 59px;
+    height: 59px;
+    top: 0px;
+    right: 50px;
+  }
+  p{
+    color: #999;
+  }
+  span{
+    font-size: 1.6em;
+  }
+  h4{
+    margin-top: 20px;
+    color: $blue;
+  }
+  .dotted{
+    font-weight: bold;
+    &::before{
+      content: "";
+      display: inline-block;
+      background: $blue;
+      height: 7px;
+      width: 7px;
+      margin-right: 10px;
+    }
+  }
+}
+
+// Features
+.features{
+  h3{
+    font-size: 2.6em;
+    font-weight: 900;
+  }
+}
+
+.choped-corner{
+  margin-top: 20px;
+  margin-bottom: 10px;
+  display: inline-block;
+  color: $white;
+  background-color: $red;
+  font-size: 1.4em;
+  line-height: 2;
+  letter-spacing: 1px;
+  height: 30px;
+  width: 140px;
+  position: relative;
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-top: 10px solid $white;
+    border-right: 10px solid $red;
+    width: 0;
+  }
+  &:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    border-bottom: 10px solid $white;
+    border-left: 10px solid $red;
+    width: 0;
+  }
+}
+
+// Most read
+.most-read{
+  padding-top: 20px;
+  padding-bottom: 30px;
+  font-family: $font-primary;
+
+  .heading-most-read{
+    font-weight: bold;
+    font-size: 1.6em;
+    text-transform: uppercase;
+    &:hover{
+      text-decoration: none;
+    }
+    &::after{
+      content: "";
+      display: inline-block;
+      width: 42px;
+      height: 29px;
+      margin-left: 20px;
+      background: url(../img/nw-arrow-down1.png) 0px 0px/42px no-repeat;
+    }
+  }
+  .most-read-topics{
+    li{
+
+      margin: 10px 0 10px -20px;
+      list-style: none;
+      height: 100px;
+      font-size: .9em;
+      border-bottom: $grey-border;
+      img{
+        float: left;
+        width: 135px;
+        height: 90px;
+        margin-right: 10px;
+      }
+      a{
+        font-weight: 600;
+      }
+    }
+  }
+}
+
+// Footer
+footer{
+  border-top: $red-border;
+  background: $black-main;
+  color: $white;
+  font-family: $font-primary;
+  font-weight: bold;
+  font-size: 1.6em;
+  padding-bottom: 40px;
+}
+
+.copy{
+  text-transform: uppercase;
+  font-size: .9em;
+  font-weight: 300;
+  letter-spacing: 1px;
+  color: $light-grey;
+}
+.copy-group{
+  margin: 40px 15px;
+  img{
+    margin-bottom: 10px;
+  }
+}
+
+.social{
+  border-top: $grey-border;
+  padding-top: 20px;
+  margin-bottom: 30px;
+  a{
+    width: 40px;
+    height: 40px;
+    margin: 10px;
+    &:first-child{
+      margin-left: 0;
+    }
+  }
+}
+
+.footer-links{
+  margin-bottom: 70px;
+  li{
+    height: 35px;
+  }
+}
+
+// Popup menu
+.reveal{
+  background: $grey;
+  font-family: $font-primary;
+  font-weight: 600;
+  .modal-head{
+    height: 61px;
+    background: $black-main;
+    margin-top: -17px;
+    img{
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+    .close-button{
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 61px;
+      width: 80px;
+      background: $grey;
+      font-size: 40px;
+    }
+  }
+  .search{
+    margin-top: 75px;
+    padding-bottom: 10px;
+    border-bottom: $grey-border;
+    input{
+      padding: 25px;
+    }
+  }
+  .vertical{
+    li{
+      height: 55px;
+      font-size: 1.8em;
+      border-bottom: $grey-border;
+      a{
+        line-height: 2;
+      }
+    }
+  }
+  .more-options{
+    position: absolute;
+    background: $black-main;
+    height: 61px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    font-size: 1.6em;
+    .subscribe{
+      img{
+        border-radius: 50%;
+      }
+      .subscribe-img{
+        padding-top: 10px;
+        margin-left: 30px;
+        margin-right: 20px;
+        display: inline-block;
+        vertical-align: middle;
+      }
+      .subscribe-text{
+        padding-top: 10px;
+        line-height: 1;
+        display: inline-block;
+        vertical-align: middle;
+      }
+    }
+    .location{
+      border-left: $grey-border;
+      border-right: $grey-border;
+      height: 61px;
+    }
+    .sign-in{
+      height: 61px;
+      padding-top: 15px;
+      border-bottom: $red-border;
+    }
+    a{
+      color: $white;
+      &:hover{
+        text-decoration: none;
+        color: darken($white, 30%);
+      }
+    }
+  }
+}

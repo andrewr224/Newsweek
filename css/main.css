@@ -249,11 +249,11 @@ nav {
       margin-right: 10px; }
 
 .features h3 {
-  font-size: 2.6em;
+  font-size: 3.1em;
   font-weight: 900; }
 
 .choped-corner {
-  margin-top: 20px;
+  margin-top: 40px;
   margin-bottom: 10px;
   display: inline-block;
   color: #fff;
@@ -415,3 +415,13 @@ footer {
       .reveal .more-options a:hover {
         text-decoration: none;
         color: #b3b3b3; }
+
+.special {
+  padding: 20px;
+  background-color: #E5E5E5;
+  color: #757575;
+  font-weight: bold;
+  font-size: 1.8em; }
+  .special:hover {
+    background-color: #f2f2f2;
+    color: #a8a8a8; }

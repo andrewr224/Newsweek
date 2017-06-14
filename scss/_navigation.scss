@@ -1,0 +1,40 @@
+// Navigation
+nav{
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 61px;
+  background-color: $black-main;
+  box-shadow: rgba(0,0,0,0.25) 0 0 6px;
+  border-bottom: 1px solid $white;
+  .logo{
+    float:left;
+  }
+  .a-menu-right{
+    float: right;
+    height: 61px;
+    a{
+      border-left: 1px solid rgba(200, 200, 200, 0.1);
+      display: inline-block;
+      vertical-align: middle;
+      height: 60px;
+      width: 80px;
+    }
+    .a-menu{
+      padding-left: 30px;
+      padding-top: 20px;
+    }
+    a:hover span{
+      background-color: darken($white, 50%);
+    }
+    span{
+      display: block;
+      background-color: $white;
+      width: 20px;
+      height: 2px;
+      margin-top: 4px;
+    }
+  }
+}

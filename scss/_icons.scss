@@ -81,3 +81,11 @@
     background-position: 0 -360px;
   }
 }
+
+.i-search{
+  @extend .i-location;
+  background-position: -2px -12px;
+  &:hover{
+    background-position: -2px -99px;
+  }
+}

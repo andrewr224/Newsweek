@@ -1,0 +1,92 @@
+*,
+*:before,
+*:after {
+          box-sizing: border-box;
+}
+
+.yellow{
+  color: $yellow;
+}
+
+.special{
+  padding: 20px;
+  background-color: #E5E5E5;
+  color: #757575;
+  font-weight: bold;
+  font-size: 1.8em;
+  &:hover{
+    background-color: lighten(#E5E5E5, 5%);
+    color: lighten(#757575, 20%);
+  }
+}
+
+.nice-list{
+  li{
+    list-style-type: none;
+    font-family: $font-primary;
+    font-size: 1.8em;
+    font-weight: 600;
+    height: 70px;
+    border-bottom: $grey-border;
+    width: 100%;
+    padding-top: 20px;
+    &:last-child{
+      border: none;
+    }
+    &::before{
+      content: "";
+      display: inline-block;
+      background: $red;
+      height: 7px;
+      width: 7px;
+      margin-right: 10px;
+    }
+  }
+}
+
+.choped-corner{
+  margin-bottom: 10px;
+  display: inline-block;
+  color: $white;
+  background-color: $red;
+  font-size: 1.4em;
+  line-height: 2;
+  letter-spacing: 1px;
+  height: 30px;
+  width: 140px;
+  position: relative;
+  text-align: center;
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-top: 10px solid $white;
+    border-right: 10px solid $red;
+    width: 0;
+  }
+  &:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    border-bottom: 10px solid $white;
+    border-left: 10px solid $red;
+    width: 0;
+  }
+}
+
+/* Small only */
+@media screen and (max-width: 39.9375em) {}
+
+/* Medium and up */
+@media screen and (min-width: 40em) {}
+
+/* Medium only */
+@media screen and (min-width: 40em) and (max-width: 63.9375em) {}
+
+/* Large and up */
+@media screen and (min-width: 64em) {}
+
+/* Large only */
+@media screen and (min-width: 64em) and (max-width: 74.9375em) {}

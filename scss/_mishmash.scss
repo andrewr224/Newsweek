@@ -8,6 +8,8 @@
   color: $yellow;
 }
 
+
+// Buttons
 .special{
   padding: 20px;
   background-color: #E5E5E5;
@@ -20,8 +22,35 @@
   }
 }
 
+.special-blue{
+  padding: 15px;
+  background-color: $blue;
+  color: $white;
+  font-weight: bold;
+  font-size: 1em;
+  &:hover{
+    background-color: darken($blue, 20%);
+    color: darken($white, 40%);
+  }
+}
+
+.special-hollow{
+  padding: 22px 45px;
+  background-color: transparent;
+  font-weight: 600;
+  font-size: .9em;
+  color: $white;
+  border: 1px solid $white;
+  cursor: pointer;
+  &:hover{
+    border-color: darken($white, 50%);
+    color: darken($white, 50%);
+  }
+}
+
 .nice-list{
   li{
+    @include red-dot;
     list-style-type: none;
     font-family: $font-primary;
     font-size: 1.8em;
@@ -32,14 +61,6 @@
     padding-top: 20px;
     &:last-child{
       border: none;
-    }
-    &::before{
-      content: "";
-      display: inline-block;
-      background: $red;
-      height: 7px;
-      width: 7px;
-      margin-right: 10px;
     }
   }
 }
@@ -75,18 +96,3 @@
     width: 0;
   }
 }
-
-/* Small only */
-@media screen and (max-width: 39.9375em) {}
-
-/* Medium and up */
-@media screen and (min-width: 40em) {}
-
-/* Medium only */
-@media screen and (min-width: 40em) and (max-width: 63.9375em) {}
-
-/* Large and up */
-@media screen and (min-width: 64em) {}
-
-/* Large only */
-@media screen and (min-width: 64em) and (max-width: 74.9375em) {}

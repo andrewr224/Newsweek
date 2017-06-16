@@ -5,6 +5,9 @@
   font-family: $font-primary;
   position: relative;
   overflow: hidden;
+  img{
+    width: 100%;
+  }
 }
 
 .change-view{

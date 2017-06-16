@@ -29,6 +29,17 @@
   }
 }
 
+@mixin red-dot{
+  &::before{
+    content: "";
+    display: inline-block;
+    background: $red;
+    height: 7px;
+    width: 7px;
+    margin-right: 10px;
+  }
+}
+
 @mixin justificator{
   margin-left: auto;
   margin-right: auto;

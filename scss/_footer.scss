@@ -6,29 +6,44 @@ footer{
   font-family: $font-primary;
   font-weight: bold;
   font-size: 1.6em;
-  padding-bottom: 40px;
 }
 
-.copy{
-  text-transform: uppercase;
-  font-size: .9em;
-  font-weight: 300;
-  letter-spacing: 1px;
-  color: $light-grey;
-}
-.copy-group{
-  margin: 40px 0;
-  padding-left: 30px;
-  img{
-    margin-bottom: 10px;
+.links{
+  .copy-group{
+    margin: 40px 0 40px 25px;
+    img{
+      margin-bottom: 15px;
+    }
+    @include media-medium{
+      margin-left: 30px;
+    }
+  }
+  .copy{
+    text-transform: uppercase;
+    font-size: .9em;
+    font-weight: 300;
+    letter-spacing: 1px;
+    color: $light-grey;
+  }
+  .social{
+    border-top: $grey-border;
+    padding-top: 30px;
+    padding-left: 10px;
+  }
+  .footer-links{
+    margin: 30px 0 110px 10px;
+    li{
+      height: 35px;
+      font-weight: 600;
+    }
+    @include media-medium{
+      margin-left: 15px;
+      margin-bottom: 0;
+    }
   }
 }
 
 .social{
-  border-top: $grey-border;
-  padding-top: 20px;
-  margin-bottom: 30px;
-  padding-left: 30px;
   a{
     width: 40px;
     height: 40px;
@@ -37,12 +52,40 @@ footer{
       margin-left: 0;
     }
   }
+  @include media-medium{
+    padding: 25px 0 50px 35px;
+  }
 }
 
-.footer-links{
-  margin-bottom: 70px;
-  padding-left: 30px;
-  li{
-    height: 35px;
+.recent-issues{
+  border-left: $grey-border;
+  padding-bottom: 150px;
+  .special-blue{
+    margin-top: 40px;
   }
+  h5{
+    margin: 30px 0 10px 30px;
+  }
+  article{
+    img{
+      padding-left: 20px;
+      width: 100%;
+      margin-bottom: 10px;
+    }
+    li{
+      font-weight: 300;
+      color: $light-grey;
+      list-style: none;
+      margin-top: 10px;
+    }
+  }
+  .special-hollow{
+    margin-top: 25px;
+    margin-left: 35px;
+  }
+}
+
+.recent-covers{
+  border-top: $grey-border;
+  padding-left: 10px;
 }

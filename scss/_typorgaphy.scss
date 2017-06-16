@@ -47,6 +47,16 @@ h4{
   text-transform: uppercase;
 }
 
+h5{
+  font-family: $font-secondary;
+  font-size: 1.8em;
+}
+
+h6{
+  font-weight: 600;
+  color: $white;
+  @include red-dot;
+}
 
 p{
   color: $black-text;

@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Newsweek - News, Analysis, Politics, Business, Technology, Lifestyle, Photos and Video</title>
     <link rel="stylesheet" href="css/foundation.css">
-    <link rel="stylesheet" href="css/icons/foundation-icons.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="icon" type="img/png" href="img/favicon.png">
   </head>
@@ -20,72 +19,107 @@
           <img class="show-for-medium-only" src="img/logo-big.png" alt="Newsweek">
         </a>
       </div>
+      <ul class="a-menu-left show-for-large">
+        <li><a href="#">U.S.</a></li>
+        <li><a href="#">World</a></li>
+        <li><a href="#">Business</a></li>
+        <li><a href="#">Tech &amp; Science</a></li>
+        <li><a href="#">Culture</a></li>
+        <li><a href="#">Sports</a></li>
+        <li><a href="#">Opinion</a></li>
+        <li><a href="#"><i class="i-search-alt"></i></a></li>
+      </ul>
+
       <div class="a-menu-right">
-        <a class="show-for-medium" href="#"><i class="i-search"></i></a>
-        <a class="a-menu show-for-small-only" data-open="small-menu">
-          <span></span><span></span><span></span>
-        </a>
-        <a class="a-menu show-for-medium-only" data-toggle="dropdown-menu">
-          <span></span><span></span><span></span>
-        </a>
-        <div class="dropdown-pane" id="dropdown-menu" data-dropdown data-auto-focus="true">
-          Example form in a dropdown.
-          <form>
-            <div class="row">
-              <div class="medium-6 columns">
-                <label>Name
-                  <input type="text" placeholder="Kirk, James T.">
-                </label>
-              </div>
-              <div class="medium-6 columns">
-                <label>Rank
-                  <input type="text" placeholder="Captain">
-                </label>
-              </div>
-            </div>
-          </form>
+        <!-- Large-screen right menu -->
+
+        <div class="show-for-large ">
+          <a class="subscribe" href="#"><i class="i-subscribe"></i></a>
+          <a class="location" href="#">
+            <i class="i-location"></i>
+          </a>
+          <a class="sign-in text-center" href="#">Sign In</a>
         </div>
 
+        <div class="hide-for-large">
+          <a class="show-for-medium" href="#"><i class="i-search"></i></a>
+          <a class="a-menu" href="#" data-toggle="dropdown-menu">
+            <span></span><span></span><span></span>
+          </a>
+        </div>
+      </div>
+      <!-- DROPDOWN -->
+
+      <div class="dropdown-pane float-right" id="dropdown-menu" data-dropdown data-auto-focus="true">
+        <ul class="text-center">
+          <li>
+            <input class="search" type="search" placeholder="Search">
+          </li>
+          <li><a href="#">U.S.</a></li>
+          <li><a href="#">World</a></li>
+          <li><a href="#">Business</a></li>
+          <li><a href="#">Tech &amp; Science</a></li>
+          <li><a href="#">Culture</a></li>
+          <li><a href="#">Sports</a></li>
+          <li><a href="#">Opition</a></li>
+        </ul>
+        <div class="row more-options text-center">
+          <div class="column small-6">
+            <a class="subscribe" href="#"><i class="i-subscribe"></i></a>
+          </div>
+          <div class="column small-3 location">
+            <a href="#"><i class="i-location"></i></a>
+          </div>
+          <div class="column small-3 text-center sign-in">
+            <a href="#">Sign In</a>
+          </div>
+        </div>
       </div>
     </nav>
 
 
     <!-- NEWS SECTION -->
     <section class="expanded row collapse text-center lead-news">
-      <article class="column lead">
-        <img id="lead-image" src="img/rtx39rij.jpg" alt="10 Downing Street">
-        <div class="text">
-          <h2><a href="#">World</a></h2>
-          <h3><a href="#">What you need to know about the U.K. election results</a></h3>
-          <p>Here are five key takeaways as U.K. politics enters an period of extraordinary uncertainty.</p>
-        </div>
-      </article>
+      <div class="column large-9">
+        <article class="column lead">
+          <img id="lead-image" src="img/rtx39rij.jpg" alt="10 Downing Street">
+          <div class="text">
+            <h2><a href="#">World</a></h2>
+            <h3><a href="#">What you need to know about the U.K. election results</a></h3>
+            <p>Here are five key takeaways as U.K. politics enters an period of extraordinary uncertainty.</p>
+          </div>
+        </article>
 
-      <article class="column medium-6">
-        <img src="img/comey_0.JPG" alt="Comey">
-        <div class="text">
-          <h2><a href="#">Analysis</a></h2>
-          <h1><a href="#">What Will Happen to Trump?</a></h1>
-          <p>How the Comey testimony strengthens the obstruction of justice case against the president.</p>
-        </div>
-      </article>
+        <article class="column medium-6">
+          <img src="img/comey_0.JPG" alt="Comey">
+          <div class="text">
+            <h2><a href="#">Analysis</a></h2>
+            <h1><a href="#">What Will Happen to Trump?</a></h1>
+            <p>How the Comey testimony strengthens the obstruction of justice case against the president.</p>
+          </div>
+        </article>
 
-      <article class="column medium-6">
-        <img src="../img/native-module-heritage.png" alt="Kate Winslet">
-        <div class="text">
-          <h2 class="h2-secondary"><a href="#">In Partnership with Longines</a></h2>
-          <h1><a href="#">Longines Puts Flagship Heritage by Kate Winslet Watches Up for Auction to Benefit Charity</a></h1>
-          <p>In an unprecedented move, Swiss watch brand Longines, along with award-winning British actress Kate Winslet, unveiled an exclusive five-piece collection.</p>
-        </div>
-      </article>
+        <article class="column medium-6">
+          <img src="../img/native-module-heritage.png" alt="Kate Winslet">
+          <div class="text">
+            <h2 class="h2-secondary"><a href="#">In Partnership with Longines</a></h2>
+            <h1><a href="#">Longines Puts Flagship Heritage by Kate Winslet Watches Up for Auction to Benefit Charity</a></h1>
+            <p>In an unprecedented move, Swiss watch brand Longines, along with award-winning British actress Kate Winslet, unveiled an exclusive five-piece collection.</p>
+          </div>
+        </article>
+      </div>
 
-      <article class="headlines column">
+
+      <article class="headlines column large-3">
         <h4>Lates Headlines</h4>
         <ul class="nice-list">
           <li><a href="#">May Tries to Unite Tories After Disastrous Election</a></li>
           <li><a href="#">Uber's CEO, Kalanick, Could Face Leave of Absence</a></li>
           <li><a href="#">Puerto Rican Voters Heavily Favor Statehood</a></li>
           <li><a href="#">How to Spot the Lies Financial Advisers Tell</a></li>
+          <li class="show-for-large"><a href="#">What Happens to ISIS If Russia Killed Baghdadi?</a></li>
+          <li class="show-for-large"><a href="#">Who Is Helmut Kohl? Architect of Reunification Dies</a></li>
+          <li class="show-for-large"><a href="#">Rosenstein Considering Recusal From Russia Probe</a></li>
         </ul>
         <div class="text">
           <button class="button expanded special" type="button" name="button">See All Headlines</button>
@@ -93,47 +127,66 @@
       </article>
     </section>
 
-    <section class="row text-center main-news">
-        <article class="column small-12 medium-6">
-          <img src="img/donald-trump.jpg" alt="Trump">
-          <div class="text">
-            <h2><a href="#">U.S.</a></h2>
-            <h1><a href="#">Trump's "Complete Vindication" Tweet is Wrong</a></h1>
-            <p>The president may say he is vindicated, but Comey's charges against him require an obstruction of justice investigation.</p>
-          </div>
-        </article>
+    <section class="expanded row text-center main-news">
 
-        <article class="column medium-6">
-          <div class="text">
-            <h2><a href="#">U.S.</a></h2>
-            <h1><a href="#">Trump's "Complete Vindication" Tweet is Wrong</a></h1>
-            <p>The president may say he is vindicated, but Comey's charges against him require an obstruction of justice investigation.</p>
-          </div>
-        </article>
+      <article class="column medium-6 large-3">
+        <div class="text">
+          <img src="img/muslim-worshippers-north-london.jpg" alt="Muslims in London">
+          <h2><a href="#">World</a></h2>
+          <h1><a href="#">Finsbury Park Mosque Attack: What We Know So Far</a></h1>
+          <p>One dead and at least ten injured after a van was driven into worshippers leaving Ramadan prayers in north London.</p>
+        </div>
+      </article>
 
-        <article class="column medium-6">
-          <div class="text">
-            <h2><a href="#">U.S.</a></h2>
-            <h1><a href="#">Trump's "Complete Vindication" Tweet is Wrong</a></h1>
-            <p>The president may say he is vindicated, but Comey's charges against him require an obstruction of justice investigation.</p>
-          </div>
-        </article>
+      <article class="column medium-6 large-3">
+        <div class="text">
+          <img class="show-for-large" src="img/rts17a12.jpg" alt="Mike Pence">
+          <h2><a href="#">U.S.</a></h2>
+          <h1><a href="#">Mike Pence’s Private Emails Cost Indiana $100,000</a></h1>
+          <p>Law firms, political parties and members of the public have filed more than 50 requests targeting Pence’s correspondence.</p>
+        </div>
+      </article>
 
-        <article class="column medium-6">
-          <div class="text">
-            <h2><a href="#">U.S.</a></h2>
-            <h1><a href="#">Trump's "Complete Vindication" Tweet is Wrong</a></h1>
-            <p>The president may say he is vindicated, but Comey's charges against him require an obstruction of justice investigation.</p>
-          </div>
-        </article>
+      <article class="column medium-6 large-3">
+        <div class="text">
+          <img class="show-for-large" src="img/uss-fitzgerald.jpeg" alt="USS Fitzgerald">
+          <h2><a href="#">U.S.</a></h2>
+          <h1><a href="#">USS Fitzgerald: Bodies of Missing U.S. Sailors Found</a></h1>
+          <p>Japanese media said all seven of the sailors who had been reported missing were found dead.</p>
+        </div>
+      </article>
 
-        <article class="column medium-6 end">
-          <div class="text">
-            <h2><a href="#">U.S.</a></h2>
-            <h1><a href="#">Trump's "Complete Vindication" Tweet is Wrong</a></h1>
-            <p>The president may say he is vindicated, but Comey's charges against him require an obstruction of justice investigation.</p>
-          </div>
-        </article>
+      <article class="column medium-6 large-3">
+        <div class="text">
+          <h2><a href="#">U.S.</a></h2>
+          <h1><a href="#">Trump's Lawyer Clashes With Fox Host Over Investigation</a></h1>
+          <p>The lawyer appeared confused about whether or not Trump was being investigated.</p>
+        </div>
+      </article>
+
+      <article class="column medium-6 large-3 end">
+        <div class="text">
+          <h2><a href="#">Opinion</a></h2>
+          <h1><a href="#">Trump Is Cutting Into the Bone of American Leadership</a></h1>
+          <p>McMaster, Tillerson, Mattis, and Kelly have largely ruined their own credibility.</p>
+        </div>
+      </article>
+
+      <article class="column large-3 end show-for-large">
+        <div class="text">
+          <h2><a href="#">Culture</a></h2>
+          <h1><a href="#">The 23 Greatest Albums of 1997</a></h1>
+          <p>1997 was the best music year of the '90s. Here's proof.</p>
+        </div>
+      </article>
+
+      <article class="column medium-6 large-3 end">
+        <div class="text">
+          <h2><a href="#">Opinion</a></h2>
+          <h1><a href="#">Neil Buchanan: Is Trump Naive? Stupid? Or Evil?</a></h1>
+          <p>Traditional means of classification break down with Trump.</p>
+        </div>
+      </article>
     </section>
 
 
@@ -144,7 +197,7 @@
           <h4>In The Magazine</h4>
         </div>
 
-        <div class="orbit" role="region" aria-label="Magazine News" data-orbit>
+        <div class="orbit hide-for-large" role="region" aria-label="Magazine News" data-orbit>
           <ul class="orbit-container">
             <li class="is-active orbit-slide row">
               <article class="column medium-6">
@@ -209,47 +262,218 @@
             <button class="hide-for-medium" data-slide="3"></button>
           </nav>
         </div>
+
+        <div class="orbit show-for-large" role="region" aria-label="Favorite Space Pictures" data-orbit>
+          <ul class="orbit-container">
+            <button class="orbit-previous"><span class="show-for-sr">Previous Slide</span><i class="i-previous"></i></button>
+            <button class="orbit-next"><span class="show-for-sr">Next Slide</span><i class="i-next"></i></button>
+
+            <li class="is-active orbit-slide row">
+              <article class="column large-3">
+                <img class="orbit-image" src="img/20170616cover2110-x-1419.jpg" alt="Big Data">
+                <div class="text">
+                  <h2><a href="#">Tech &amp; Science</a></h2>
+                  <h1><a href="#">Freedom From Choice: How Big Data Manipulates Voters</a></h1>
+                  <p>Political operatives used fake news, Big Data and Facebook to suppress the vote and rile up racists in 2016. It's going to be even uglier next time around.</p>
+                </div>
+              </article>
+              <article class="column large-3">
+                <img class="orbit-image" src="img/noburockwell0009.jpg" alt="Perfect Restaurant">
+                <div class="text">
+                  <h2><a href="#">Culture</a></h2>
+                  <h1><a href="#">Inside Nobu Downtown, a Perfect Restaurant</a></h1>
+                  <p>With its grand design, the new Nobu Downtown has the ego that both figures seem to lack.</p>
+                </div>
+              </article>
+              <article class="column large-3">
+                <img class="orbit-image" src="img/0616irancontra02.jpg" alt="Trump">
+                <div class="text">
+                  <h2><a href="#">U.S.</a></h2>
+                  <h1><a href="#">Lessons from the Iran-Contra Scandal</a></h1>
+                  <p>The years-long investigation into the illegal trade of arms for hostages offers a cautionary tale for those hoing Trump is forced from office.</p>
+                </div>
+              </article>
+              <article class="column large-3">
+                <img class="orbit-image" src="img/0609ruraldementia07.jpg" alt="Alzheimer">
+                <div class="text">
+                  <h2><a href="#">Tech &amp; Science</a></h2>
+                  <h1><a href="#">The Plight of Alzheimer's Disease in Rural America</a></h1>
+                  <p>State assistance programs can make life bearable again for caregivers in remote areas struggling to provide around-the-clock help.</p>
+                </div>
+              </article>
+            </li>
+
+            <li class="orbit-slide">
+              <article class="column large-3">
+                <img class="orbit-image" src="img/20170623cover1280-x-720.jpg" alt="Trump">
+                <div class="text">
+                  <h2><a href="#">U.S.</a></h2>
+                  <h1><a href="#">Breitbart News, Donald Trump’s Pravda, Is in Crisis</a></h1>
+                  <p>The site can’t pivot away from right-wing click-bait to sober, deeply reported news any more than Trump can pivot away from paranoid tweets.</p>
+                </div>
+              </article>
+              <article class="column large-3">
+                <img class="orbit-image" src="img/0610comey02.jpg" alt="Comey">
+                <div class="text">
+                  <h2><a href="#">Spytalk</a></h2>
+                  <h1><a href="#">What Comey Left Out About Probe Should Trouble Trump</a></h1>
+                  <p>What the former FBI director left out of his sworn testimony could spell trouble for the likes of Jared Kushner, Jeff Sessions—and Trump himself.</p>
+                </div>
+              </article>
+              <article class="column large-3">
+                <img class="orbit-image" src="img/int06-23-itvjohn-giorno-1.jpg">
+                <div class="text">
+                  <h2><a href="#">Culture</a></h2>
+                  <h1><a href="#">New York Celebrates a Great Underground Artist</a></h1>
+                  <p>A summer-long exhibition spread across 12 New York City venues will explore the poet-artist's droll works like "God Is Man Made."</p>
+                </div>
+              </article>
+              <article class="column large-3">
+                <img class="orbit-image" src="img/06_09_jfk_01.jpg">
+                <div class="text">
+                  <h2><a href="#">U.S.</a></h2>
+                  <h1><a href="#">The CIA's Secrets About JFK, Che, and Castro Revealed</a></h1>
+                  <p>After years of silence, a former CIA operative speaks out about Castro, Oswald and the assassination of JFK.</p>
+                </div>
+              </article>
+            </li>
+
+            <li class="orbit-slide">
+              <article class="column large-3">
+                <img class="orbit-image" src="img/20170616cover2110-x-1419.jpg" alt="Big Data">
+                <div class="text">
+                  <h2><a href="#">Tech &amp; Science</a></h2>
+                  <h1><a href="#">Freedom From Choice: How Big Data Manipulates Voters</a></h1>
+                  <p>Political operatives used fake news, Big Data and Facebook to suppress the vote and rile up racists in 2016. It's going to be even uglier next time around.</p>
+                </div>
+              </article>
+              <article class="column large-3">
+                <img class="orbit-image" src="img/noburockwell0009.jpg" alt="Perfect Restaurant">
+                <div class="text">
+                  <h2><a href="#">Culture</a></h2>
+                  <h1><a href="#">Inside Nobu Downtown, a Perfect Restaurant</a></h1>
+                  <p>With its grand design, the new Nobu Downtown has the ego that both figures seem to lack.</p>
+                </div>
+              </article>
+              <article class="column large-3">
+                <img class="orbit-image" src="img/0616irancontra02.jpg" alt="Trump">
+                <div class="text">
+                  <h2><a href="#">U.S.</a></h2>
+                  <h1><a href="#">Lessons from the Iran-Contra Scandal</a></h1>
+                  <p>The years-long investigation into the illegal trade of arms for hostages offers a cautionary tale for those hoing Trump is forced from office.</p>
+                </div>
+              </article>
+              <article class="column large-3">
+                <img class="orbit-image" src="img/0609ruraldementia07.jpg" alt="Alzheimer">
+                <div class="text">
+                  <h2><a href="#">Tech &amp; Science</a></h2>
+                  <h1><a href="#">The Plight of Alzheimer's Disease in Rural America</a></h1>
+                  <p>State assistance programs can make life bearable again for caregivers in remote areas struggling to provide around-the-clock help.</p>
+                </div>
+              </article>
+            </li>
+
+            <li class="orbit-slide">
+              <article class="column large-3">
+                <img class="orbit-image" src="img/20170623cover1280-x-720.jpg" alt="Trump">
+                <div class="text">
+                  <h2><a href="#">U.S.</a></h2>
+                  <h1><a href="#">Breitbart News, Donald Trump’s Pravda, Is in Crisis</a></h1>
+                  <p>The site can’t pivot away from right-wing click-bait to sober, deeply reported news any more than Trump can pivot away from paranoid tweets.</p>
+                </div>
+              </article>
+              <article class="column large-3">
+                <img class="orbit-image" src="img/0610comey02.jpg" alt="Comey">
+                <div class="text">
+                  <h2><a href="#">Spytalk</a></h2>
+                  <h1><a href="#">What Comey Left Out About Probe Should Trouble Trump</a></h1>
+                  <p>What the former FBI director left out of his sworn testimony could spell trouble for the likes of Jared Kushner, Jeff Sessions—and Trump himself.</p>
+                </div>
+              </article>
+              <article class="column large-3">
+                <img class="orbit-image" src="img/int06-23-itvjohn-giorno-1.jpg">
+                <div class="text">
+                  <h2><a href="#">Culture</a></h2>
+                  <h1><a href="#">New York Celebrates a Great Underground Artist</a></h1>
+                  <p>A summer-long exhibition spread across 12 New York City venues will explore the poet-artist's droll works like "God Is Man Made."</p>
+                </div>
+              </article>
+              <article class="column large-3">
+                <img class="orbit-image" src="img/06_09_jfk_01.jpg">
+                <div class="text">
+                  <h2><a href="#">U.S.</a></h2>
+                  <h1><a href="#">The CIA's Secrets About JFK, Che, and Castro Revealed</a></h1>
+                  <p>After years of silence, a former CIA operative speaks out about Castro, Oswald and the assassination of JFK.</p>
+                </div>
+              </article>
+            </li>
+          </ul>
+        </div>
       </div>
     </section>
 
 
     <!-- NEWS IN PICTURES SECTION -->
-    <section class="row in-pics">
-      <article class="column small-12">
-        <img src="img/diplomatic-danger.JPG" alt="Diplomatic Danger">
-        <a class="change-view hide-for-medium" href="#"><i class="i-change-view"></i></a>
-        <a class="change-view-big show-for-medium" href="#"><img src="../img/bigshots-logo.svg"></a>
-        <div class="in-pics-text">
-          <h4>The latest <br class="show-for-small-only">News in Pictures</h4>
-          <span class="dotted">Diplomatic Danger</span>
-          <p>Kabul, Afghanistan—First responders work near the site of a large truck bomb that killed at least 150 people, wounded hundreds and damaged several buildings on </p>
-          <span>440 PHOTOS</span>
+    <section class="expanded row in-pics">
+      <article class="">
+        <div class="column large-9 float-right">
+          <img src="img/diplomatic-danger.JPG" alt="Diplomatic Danger">
+          <a class="change-view hide-for-medium" href="#"><i class="i-change-view"></i></a>
+        </div>
+        <div class="column large-3">
+
+          <a class="change-view-big show-for-medium" href="#"><img src="../img/bigshots-logo.svg"></a>
+          <div class="in-pics-text">
+            <h4>The latest <br class="show-for-small-only">News in Pictures</h4>
+            <button class="button special-blue expanded show-for-large" type="button" name="button">Launch Slideshow</button>
+            <br class="show-for-large">
+            <span class="dotted">Diplomatic Danger</span>
+            <p>Kabul, Afghanistan—First responders work near the site of a large truck bomb that killed at least 150 people, wounded hundreds and damaged several buildings on </p>
+            <span>440 PHOTOS</span>
+          </div>
         </div>
       </article>
     </section>
 
     <!-- FEATURES SECTION -->
-    <section class="row features">
-      <article class="column medium-6 hide-for-small-only cover">
-        <a href="#">
-          <img src="img/20170616cover1800-x-2400.jpg" alt="Newsweek Magazine">
-        </a>
-      </article>
-      <article class="column medium-6 this-issue">
-        <h2 class="choped-corner">This Week</h2>
-        <h3>June 16 Issue</h3>
-        <ul class="nice-list">
-          <li><a href="#">Lessons from the Iran-Contra Scandal</a></li>
-          <li><a href="#">Inside Nobu Downtown, a Perfect Restaurant</a></li>
-          <li><a href="#">We Need Better Mars Photos Before We Leave Earth</a></li>
-        </ul>
-        <div class="text">
-          <button class="button expanded special" type="button" name="button">See All Features</button>
+    <section class="row collapsed features">
+      <div class="column large-9">
+        <div class="column large-12 show-for-large text-center feature-head">
+          <h2 class="choped-corner">This Week</h2>
+          <h3>June 16 Issue</h3>
         </div>
-      </article>
+        <article class="column medium-6 hide-for-small-only cover">
+          <a href="#">
+            <img src="img/20170616cover1800-x-2400.jpg" alt="Newsweek Magazine">
+          </a>
+        </article>
+        <article class="column medium-6 this-issue">
+          <div class="hide-for-large">
+            <h2 class="choped-corner">This Week</h2>
+            <h3>June 16 Issue</h3>
+          </div>
 
-      <div class="column">
-        <div class=" most-read">
+          <div class="show-for-large">
+            <blockquote>
+              <a href="#">WITHOUT MOVING A SINGLE SOLDIER IN ITS MILLION-MAN ARMY, THE NORTH COULD LAUNCH A DEVASTATING ATTACK ON SEOUL.</a>
+              <cite>BRUCE KLINGNER, FORMER CIA ANALYST</cite>
+            </blockquote>
+            <p class="list-title">Inside This Issue</p>
+          </div>
+
+          <ul class="nice-list">
+            <li><a href="#">Lessons from the Iran-Contra Scandal</a></li>
+            <li><a href="#">Inside Nobu Downtown, a Perfect Restaurant</a></li>
+            <li><a href="#">We Need Better Mars Photos Before We Leave Earth</a></li>
+          </ul>
+          <div class="text">
+            <button class="button expanded special" type="button" name="button">See All Features</button>
+          </div>
+        </article>
+      </div>
+
+      <div class="column large-3">
+        <div class="most-read">
           <div class="heading">
             <a href="#" class="heading-most-read">Most Read</a>
           </div>
@@ -383,53 +607,6 @@
 
       </div>
     </footer>
-
-    <!-- POPUP MENU - propably better to replace with a dropdown! -->
-    <div class="reveal row expanded" id="small-menu" data-reveal>
-      <div class="column small-12 modal-head">
-        <div class="logo">
-          <a href="#">
-            <img src="img/logo-small.png" alt="N">
-          </a>
-        </div>
-        <button class="close-button" data-close aria-label="Close modal" type="button">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-
-      <div class="search">
-        <input type="search" placeholder="Search">
-      </div>
-
-      <ul class="menu vertical text-center">
-        <li><a href="#">U.S.</a></li>
-        <li><a href="#">World</a></li>
-        <li><a href="#">Business</a></li>
-        <li><a href="#">Tech &amp; Science</a></li>
-        <li><a href="#">Culture</a></li>
-        <li><a href="#">Sports</a></li>
-        <li><a href="#">Opition</a></li>
-      </ul>
-
-      <div class="row more-options">
-        <div class="column small-6">
-          <a class="subscribe" href="#">
-            <div class="subscribe-img">
-              <img src="img/subscribe.jpg">
-            </div>
-            <div class="subscribe-text text-center"><span class="yellow">Subscribe</span><br> To Newsweek</div>
-          </a>
-        </div>
-        <div class="column small-3 location">
-          <a href="#">
-            <i class="i-location"></i>
-          </a>
-        </div>
-        <div class="column small-3 text-center sign-in">
-          <a href="#">Sign In</a>
-        </div>
-      </div>
-    </div>
 
     <script src="js/vendor/jquery.js"></script>
     <script src="js/vendor/what-input.js"></script>

@@ -1,19 +1,27 @@
-/* Medium and up */
+// Medium and up
 @mixin media-medium{
   @media screen and (min-width: 640px) {
     @content;
   }
 }
 
+// Medium only
 @mixin media-medium-only{
   @media screen and (min-width: 640px) and (max-width: 1023px){
     @content;
   }
 }
 
-/* Large */
+// Large
 @mixin media-large{
   @media screen and (min-width: 1024px) {
+    @content;
+  }
+}
+
+// Custom media for the navbar
+@mixin media-navbreak{
+  @media screen and (max-width: 1096px) {
     @content;
   }
 }

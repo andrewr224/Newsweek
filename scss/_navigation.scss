@@ -9,23 +9,61 @@ nav{
   background-color: $black-main;
   box-shadow: rgba(0,0,0,0.25) 0 0 6px;
   border-bottom: 1px solid $white;
+  color: $white;
+  font-family: $font-primary;
+  font-weight: 700;
   .logo{
     float:left;
+    margin-top: -1px;
   }
-  .a-menu-right{
-    float: right;
-    height: 61px;
-    a{
-      border-left: 1px solid rgba(200, 200, 200, 0.1);
-      display: inline-block;
-      vertical-align: middle;
-      height: 60px;
-      width: 80px;
+  .a-menu-left{
+    float: left;
+    vertical-align: middle;
+    text-transform: uppercase;
+    margin-left: 10px;
+    font-size: 1.4em;
+    letter-spacing: 1.2px;
+    @include media-navbreak{
+      letter-spacing: 1px;
+      margin-left: 0;
     }
-    .a-menu{
-      padding-left: 30px;
-      padding-top: 20px;
+    li{
+      list-style: none;
+      float: left;
+      margin-left: 20px;
+      &:last-child{
+        margin-left: 0;
+      }
+      @include media-navbreak{
+        margin-left: 10px;
+      }
     }
+  }
+  a{
+    line-height: 60px;
+    &:hover{
+      text-decoration: none;
+      color: darken($white, 50%);
+    }
+  }
+}
+
+.a-menu-right{
+  font-size: 1.6em;
+  float: right;
+  a{
+    border-left: 1px solid rgba(200, 200, 200, 0.1);
+    display: inline-block;
+    vertical-align: middle;
+    height: 60px;
+    width: 80px;
+    &:hover span{
+      background-color: darken($white, 50%);
+    }
+  }
+  .a-menu{
+    padding-left: 30px;
+    padding-top: 20px;
     span{
       display: block;
       background-color: $white;
@@ -33,12 +71,70 @@ nav{
       height: 2px;
       margin-top: 4px;
     }
-    &:hover span{
-      background-color: darken($white, 50%);
+  }
+  .sign-in{
+    width: 108px;
+    border-bottom: $red-border;
+  }
+  .subscribe{
+    width: 180px;
+  }
+}
+
+.dropdown-pane{
+  background-color: $grey;
+  color: $black-text;
+  height: auto;
+  ul{
+    margin-left: 0;
+    margin-bottom: 100px;
+  }
+  li{
+    list-style: none;
+    height: 50px;
+    width: 100%;
+    border-bottom: $grey-border;
+    &:last-child{
+      border-bottom: none;
     }
-    &:target span{
-      &:last-child{
-        display: none;
+  }
+  a{
+    line-height: 50px;
+    &:hover{
+      text-decoration: underline;
+      color: inherit;
+    }
+  }
+  .search{
+    padding: 20px;
+    text-align: center;
+    &:focus{
+      box-shadow: none;
+      border: inherit;
+    }
+  }
+  .more-options{
+    position: absolute;
+    background: $black-main;
+    margin-top: 20px;
+    height: 61px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    .location{
+      border-left: $grey-border;
+      border-right: $grey-border;
+      height: 61px;
+    }
+    .sign-in{
+      height: 61px;
+      border-bottom: $red-border;
+    }
+    a{
+      color: $white;
+      &:hover{
+        text-decoration: none;
+        color: darken($white, 30%);
       }
     }
   }

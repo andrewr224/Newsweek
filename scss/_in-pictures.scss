@@ -5,8 +5,12 @@
   font-family: $font-primary;
   position: relative;
   overflow: hidden;
+  padding-bottom: 40px;
   img{
     width: 100%;
+  }
+  @include media-large{
+    padding-top: 40px;
   }
 }
 
@@ -23,13 +27,25 @@
   width: 236px;
   bottom: 20px;
   left: 20px;
+  @include media-large{
+    position: relative;
+    display: inline-block;
+    margin-top: 20px;
+    margin-left: -20px;
+    width: 100%;
+  }
 }
 
 .in-pics-text{
   text-align: center;
-  margin-bottom: 40px;
+  button{
+    font-size: 1.4em;
+  }
   p{
     color: #999;
+    @include media-large{
+      font-size: 1.6em;
+    }
   }
   span{
     font-size: 1.6em;
@@ -37,6 +53,10 @@
   h4{
     margin-top: 20px;
     color: $blue;
+    @include media-large{
+      font-size: 2em;
+      line-height: 1em;
+    }
   }
   .dotted{
     font-weight: bold;
@@ -44,7 +64,10 @@
   }
   @include media-medium{
     margin-left: 270px;
-    margin-bottom: 50px;
+    text-align: left;
+  }
+  @include media-large{
+    margin-left: 100px;
     text-align: left;
   }
 }

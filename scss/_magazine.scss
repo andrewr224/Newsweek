@@ -2,6 +2,9 @@
 .magazine{
   border-top: $grey-border;
   padding-top: 30px;
+  @include media-large{
+    padding-bottom: 30px;
+  }
   h4{
     display: inline-block;
     background: white;
@@ -33,5 +36,19 @@
     @include media-medium{
       border-top: $grey-border;
     }
+  }
+}
+
+.orbit-previous, .orbit-next{
+  background-color: $red;
+  width: 60px;
+  height: 60px;
+  font-size: 40px;
+  cursor: pointer;
+  &:focus{
+    background-color: $red;
+  }
+  &:hover{
+    background-color: $black-main;
   }
 }

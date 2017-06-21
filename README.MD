@@ -1,6 +1,6 @@
 # Odin Project - Newsweek
 
-## This is the Newsweek project from the Odin Project. The goal is to replicate the newsweek.com utilizing the Foundation framework and sans-serif
+## This is the Newsweek project from the Odin Project. The goal is to replicate the newsweek.com utilizing the Foundation framework and SASS
 
 ## View the results at https://andrewr224.github.io/Newsweek/
 
